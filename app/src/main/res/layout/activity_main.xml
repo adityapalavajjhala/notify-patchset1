@@ -21,14 +21,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="Notify"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.189"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <Switch
         android:id="@+id/switch1"
@@ -37,7 +38,91 @@
         android:text="Apps/Category"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:layout_editor_absoluteX="24dp"
+        android:layout_height="130dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:src="@drawable/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true"
+                />
+            <ImageButton
+                android:src="@drawable/wa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+            <ImageButton
+                android:src="@drawable/twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+            <ImageButton
+                android:src="@drawable/spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+            <ImageButton
+                android:src="@drawable/snap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+            <ImageButton
+                android:src="@drawable/lkdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+            <ImageButton
+                android:src="@drawable/fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true" />
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
